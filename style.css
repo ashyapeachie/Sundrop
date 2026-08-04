@@ -1,0 +1,108 @@
+/* color palette */
+:root{
+    --sky: #AEE2FF;
+    --lighter-sky: #DFF6FF;
+
+    --grass: #7AC74F;
+    --dark-grass: #5A9E38;
+    --sunflower: #FFD447;
+    --soil: #8B5E3C;
+
+    --panel: #FFF8DC;
+    --border: #4B3A2F;
+    --text: #3C2A21;
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* page */
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text);
+    background: linear-gradient(
+        var(--lighter-sky),
+        var(--sky)
+    )
+}
+
+main{
+    width: min(900px, 95vw);
+}
+
+/* header */
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+header p{
+    margin-top: .5rem;
+}
+
+/* display */
+#display{
+    display: flex;
+    justify-content: space-between;
+    background: var(--panel);
+    border: 4px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* game container */
+#game-container{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border: 5px solid var(--border);
+    border-radius: 16px;
+}
+
+/* sky */
+#sky{
+    position:relative;
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        var(--lighter-sky),
+        var(--sky)
+    )
+}
+
+/* ground */
+#ground{
+    position: absoluste;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+
+    background: var(--grass);
+    border-top: 6px solid var(--dark-grass);
+}
+
+/* player */
+#player{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    user-select: none
+}
