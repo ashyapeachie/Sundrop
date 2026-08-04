@@ -1,7 +1,7 @@
 # Sundrop 🌻
-flowers boom, collect sunbeams, and have fun!
 
 ## ☀️ Overview
+For my first gamejam, I am developing this project is for the Lil Summer GameJam hosted by SlombyDev on itch.io! The concept of my mini game is to gather as many rays of sunshine as you can before the clouds roll in to fit the Summery theme 🌻
 
 ## 🛠️ Tech Stack
 - HTML & CSS
