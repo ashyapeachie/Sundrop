@@ -68,12 +68,30 @@ function resetSunshine(){
     sunshineX = Math.random() * 90 + 5;
 }
 
+// collision function
+function checkCollision(){
+    const playerRect = player.getBoundingClientRect();
+    const sunshineRect = sunshine.getBoundingClientRect();
+
+    if(
+        playerRect.left < sunshineRect.right &&
+        playerRect.right > sunshineRect.left &&
+        playerRect.top < sunshineRect.bottom &&
+        playerRect.bottom > sunshineRect.top
+    ){
+        score++;
+        console.log("Sunshine Collected!", score);
+        resetSunshine();
+    }
+}
+
 // game loop
 function gameLoop(){
     movePlayer();
     moveSunshine();
     updatePlayer();
     updateSunshine();
+    checkCollision();
     requestAnimationFrame(gameLoop);
 }
 
