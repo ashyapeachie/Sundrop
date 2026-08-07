@@ -7,6 +7,7 @@ let playerX = 50;
 // % across the screen
 const playerSpeed = 2;
 // movement apeed
+let score = 0;
 
 // draw player 
 function updatePlayer(){
