@@ -1,5 +1,6 @@
 // DOM elments
 const player = document.getElementById("player");
+const sunshine = document.getElementById("sunshine");
 const gameContainer = document.getElementById("game-container");
 
 // variables
@@ -9,11 +10,23 @@ const playerSpeed = 2;
 // movement apeed
 let score = 0;
 
+// sunshine variables
+let sunshineX = 50;
+let sunshineY = 0;
+
+const sunshineSpeed = 1;
+
 // draw player 
 function updatePlayer(){
     player.style.left = `${playerX}%`;
 }
 // the function above is responsible for updating the player's position
+
+// draw sunshine 
+function updateSunshine(){
+    sunshine.style.left = `${sunshineX}%`;
+    sunshine.style.top = `${sunshineY}px`;
+}
 
 // keyboard input
 const keys = {};
@@ -40,10 +53,27 @@ function movePlayer(){
     // keeps player inside the game area 
 }
 
+// falling object
+function moveSunshine(){
+    sunshineY += sunshineSpeed;
+
+     if (sunshineY > gameContainer.clientHeight) {
+        resetSunshine();
+    }
+}
+
+// reset sunshine
+function resetSunshine(){
+    sunshineY = 0;
+    sunshineX = Math.random() * 90 + 5;
+}
+
 // game loop
 function gameLoop(){
     movePlayer();
+    moveSunshine();
     updatePlayer();
+    updateSunshine();
     requestAnimationFrame(gameLoop);
 }
 
