@@ -199,4 +199,3 @@ timerDisplay.textContent = timer;
 let timerInterval = setInterval(updateTimer, 1000);
 
 gameLoop();
-
