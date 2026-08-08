@@ -35,6 +35,12 @@ Sundrop is a tiny summer-themed arcade game created for A Lil Summer GameJam hos
 
 *Itch.io page coming soon!*
 
+## 🔊 Audio Credits
+
+Sound effects from **JDWasabi's 8-bit / 16-bit Sound Effects (x25) Pack**
+
+Created by JDWasabi and used under the creator's stated usage terms
+
 ## ☁️ Author
 Ashya H
 Computer Information Technology Student

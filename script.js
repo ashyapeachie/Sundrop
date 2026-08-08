@@ -12,6 +12,11 @@ const gameOverScreen = document.getElementById("game-over");
 const finalScoreDisplay = document.getElementById("final-score");
 const restartButton = document.getElementById("restart-button");
 
+// sound effects
+const sunshineSound = new Audio("assets/sounds/sunshinecollect.wav");
+const cloudSound = new Audio("assets/sounds/hitdamage.wav");
+const buttonSound = new Audio("assets/sounds/buttonclick.wav");
+
 // variables
 let playerX = 50;
 // % across the screen
@@ -100,6 +105,10 @@ function checkCollision(){
     ){
         score++;
         scoreDisplay.textContent = score;
+
+        sunshineSound.currentTime = 0;
+        sunshineSound.play();
+
         console.log("Sunshine Collected!", score);
         resetSunshine();
     }
@@ -152,6 +161,10 @@ function checkCloudCollision(){
     ){
         score = Math.max(0, score - 1);
         scoreDisplay.textContent = score;
+
+        cloudSound.currentTime = 0;
+        cloudSound.play();
+
         resetCloud();
     }
 
@@ -173,7 +186,12 @@ function restartGame(){
 
     gameLoop();
 }
-restartButton.addEventListener("click", restartGame);
+
+restartButton.addEventListener("click", () => {
+    buttonSound.currentTime = 0;
+    buttonSound.play();
+    restartGame();
+});
 
 // game loop
 function gameLoop(){
