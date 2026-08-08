@@ -17,11 +17,15 @@ Sundrop is a tiny summer-themed arcade game created for A Lil Summer GameJam hos
 - GitHub
 
 ## ✨ Features
-- simple yet fun gameplay: move sunflower from left to right using the keyboard
-- timer and score tracking
-- hovering effects
+- simple, arcade style gameplay
+- collection & score tracking
+- falling obstacles
+- 60 second countdown timer
+- collision detection
+- game over screen featuring final score
+- responsive design
+- sunflower themed visual design
 - pixel / retro inspired interface
-- sunflower themed
 
 ## 📸 Screenshots
 
