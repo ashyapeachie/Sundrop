@@ -33,7 +33,7 @@ Sundrop is a tiny summer-themed arcade game created for A Lil Summer GameJam hos
 
 ## 🎥 Demo
 
-*Demo video coming soon!*
+https://github.com/user-attachments/assets/de751021-3acf-4aea-b2b1-2d478af52eca
 
 ## 🌻 Play Sundrop
 
