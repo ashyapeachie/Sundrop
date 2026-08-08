@@ -97,6 +97,24 @@ header p{
     border-top: 6px solid var(--dark-grass);
 }
 
+/* sunshine */
+#sunshine{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 2.5rem;
+    user-select: none;
+}
+
+/* cloud */
+#cloud{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 2.5rem;
+    user-select: none;
+}
+
 /* player */
 #player{
     position: absolute;
@@ -107,11 +125,53 @@ header p{
     user-select: none
 }
 
-/* sunshine */
-#sunshine{
+/* game over screen */
+#game-over{
     position: absolute;
     top: 0;
-    left: 50%;
-    font-size: 2.5rem;
-    user-select: none;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    background: rgba(255, 248, 220, 0.9);
+}
+
+#game-over-content{
+    text-align: center;
+    padding: 30px;
+    border-radius: 16px;
+
+    background: var(--panel);
+    border: 5px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 6px 0 var(--border);
+}
+
+#game-over h2{
+    margin-bottom: 15px;
+}
+
+.final-score {
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+#restart-button {
+    padding: 12px 24px;
+    border: 4px solid var(--border);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    background: var(--sunflower);
+    color: var(--text);
+}
+
+#restart-button:hover {
+    transform: translateY(-2px);
 }
