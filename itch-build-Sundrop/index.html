@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>🌻Sundrop🌻</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>🌻Sundrop🌻</h1>
+        </header>
+
+        <main>
+            <!-- display -->
+            <section id="display">
+                <div class="display-item">
+                   ☀️ <span id="score">0</span>
+                </div>
+
+                <div class="display-item">
+                    ⏱️ <span id="timer">60</span>
+                </div>
+            </section>
+            
+            <!-- game area -->
+            <section id="game-container">
+                <!-- sky -->
+                <div id="sky">
+                    <div id="sunshine">☀️</div>
+                    
+                    <div id="cloud">☁️</div>
+
+                    <div id="player">🌻</div>
+                </div>
+                
+                <!-- ground -->
+                <div id="ground"></div>
+
+                <!-- game over screen -->
+                <div id="game-over">
+                    <div id="game-over-content">
+                        <h2>🌻 Summer's Over! 🌻</h2>
+
+                        <p>You collected</p>
+
+                        <p class="final-score">
+                            ☀️ <span id="final-score">0</span>
+                        </p>
+
+                        <button id="restart-button">Play Again</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
